@@ -1,0 +1,10 @@
+var myInteger=12;
+var myLong=9310141419482;
+var myfloat=5.5;
+var myDouble= 9310141419482.22;
+var myboolean=true;
+var myboolean2=false;
+var mynotnumber=NaN;
+var nan_example=0/0;
+var notdefined;
+window.alert(aRandomVariable);
