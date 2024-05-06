@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Countries:</p>
+<ul>
+<li id="C1" onclick="showDetails(this)" data-id="US" data-dial-code="1">USA</li>
+<li id="C2" onclick="showDetails(this)" data-id="CA" data-dial-code="1">Canada</li>
+<li id="C3" onclick="showDetails(this)" data-id="FF" data-dial-code="3">France</li>
+</ul>
+<button type="button" onclick="correctDetails()">Correct Country Details</button>
+
+</body>
+<script src="index.js">
+
+
+function showDetails(item) {
+var msg = item.innerHTML
++ "\r\nISO ID: " + item.getAttribute("data-id")
++ "\r\nDial Code: " + item.getAttribute("data-dial-code");
+alert(msg);
+}
+function correctDetails(item) {
+var item = document.getEmementById("C3");
+item.setAttribute("id", "FR");
+item.setAttribute("data-dial-code", "33");
+}
+</script>
+</html>
